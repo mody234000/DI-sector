@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤشرات تطوير البنية التحتية - منطقة جازان</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>مؤشرات تطوير البنية التحتية</h1>
+            <p>تقييم أداء منطقة جازان في مؤشرات الاتصالات والنقل الجوي والبحري</p>
+            <div class="sector-badge">قطاع: تطوير البنية التحتية</div>
+        </div>
+    </header>
+    
+    <nav class="indicators-nav">
+        <div class="container">
+            <div class="nav-container">
+                <div class="indicator-tab active" data-indicator="DI-01">
+                    <i class="fas fa-mobile-alt"></i> DI-01: نسبة ملكية الهاتف المحمول
+                </div>
+                <div class="indicator-tab" data-indicator="DI-02">
+                    <i class="fas fa-plane"></i> DI-02: توزيع ركاب المطارات
+                </div>
+                <div class="indicator-tab" data-indicator="DI-03">
+                    <i class="fas fa-wifi"></i> DI-03: نسبة انتشار الإنترنت
+                </div>
+                <div class="indicator-tab" data-indicator="DI-04">
+                    <i class="fas fa-globe-americas"></i> DI-04: الرحلات الدولية
+                </div>
+                <div class="indicator-tab" data-indicator="DI-05">
+                    <i class="fas fa-route"></i> DI-05: الرحلات الداخلية
+                </div>
+                <div class="indicator-tab" data-indicator="DI-06">
+                    <i class="fas fa-ship"></i> DI-06: البضائع بالموانئ
+                </div>
+                <div class="indicator-tab" data-indicator="DI-07">
+                    <i class="fas fa-boxes"></i> DI-07: بضائع ميناء جازان
+                </div>
+                <div class="indicator-tab" data-indicator="DI-08">
+                    <i class="fas fa-chart-line"></i> DI-08: تغير حجم البضائع
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container main-content">
+        <aside class="indicators-list">
+            <h3><i class="fas fa-list-ul"></i> قائمة المؤشرات</h3>
+            <div class="indicator-item active" data-indicator="DI-01">
+                <span class="indicator-code">DI-01</span>
+                <span class="indicator-name">نسبة الأفراد الذين يمتلكون الهاتف المحمول</span>
+            </div>
+            <!-- باقي المؤشرات... -->
+        </aside>
+        
+        <main class="indicator-content">
+            <!-- محتوى المؤشرات سيتم تحميله ديناميكيًا -->
+        </main>
+    </div>
+    
+    <div id="pdfExportOverlay" class="pdf-export-overlay">
+        <div class="pdf-export-modal">
+            <h3><i class="fas fa-file-pdf"></i> تصدير إلى PDF</h3>
+            <p>جارٍ تحضير ملف PDF للمؤشر المحدد...</p>
+            <div class="pdf-progress">
+                <div class="pdf-progress-bar" id="pdfProgressBar"></div>
+            </div>
+            <p id="pdfStatus">تهيئة التصدير...</p>
+            <button class="link-btn secondary" onclick="closePDFModal()" style="margin-top: 15px;">
+                <i class="fas fa-times"></i> إلغاء
+            </button>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
